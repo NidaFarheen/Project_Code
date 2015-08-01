@@ -1,0 +1,30 @@
+Options available:
+-a <1>  :  Single End Sequencing (Default)
+-a <2,insertsize>  :  Paired End Sequencing. -a 2,500 implies that user has chosen Paired End Sequencing with a insert size of 500.
+
+-p <1>  :  Illumina Platform (Default)
+-p <2>  :  SOlid Platform
+-p <3>  :  Pac Bio Platform
+
+-r <specify readlength> : Deafult (40)  *For platform Illumina(1)/SOlid(2)
+-r <specify mean,stdev> : This is only for Pacbio. PacBio reads follow a log normal distribution. Specify the mean and std deviation 
+                          Default: 1.95,0.3
+
+-i <specify input file path> : Defualt genome LamdaPhage
+
+-x <specify output file 1 path for single end sequencing> : Default (current directory)
+-y <specify output file 1 path for paired end sequencing> : Default (current directory)
+-z <specify output file 2 path for paired end sequencing> : Default (current directory)
+
+-g <l>  : Genome Type 1 Linear (Default)
+-g <c>  : Genome Type 2 Circular 
+
+-s : s stands for stats. You can either specify the coverage or the read numbers required. 
+-s c30 would mean a coverage of 30 
+-s n40 would mean No. of reads generated = 40. 
+By default c10 will be taken.   
+
+-v :verbose mode 
+Type -v True to switch on the verbose mode (Default)
+Type -v False to run program silently
+
